@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 25px;
+  min-height: 100px;
+}
+
+nav {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/liminal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.contact-form {
+  height: 400px;
+}
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-form form .contact-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  border-radius: 15px;
+  width: 20%;
+}
+.contact-form form .contact-inputs input {
+  min-height: 45px;
+  width: 100%;
+  margin: 15px;
+}
+.contact-form form .contact-message {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contact-form form .contact-message h3 {
+  text-align: center;
+}
+.contact-form form .contact-message textarea {
+  border-radius: 10px;
+  min-width: 300px;
+  height: 100%;
+}
+.contact-form .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-form .button .form-button {
+  border-radius: 20px;
+  min-height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+.about-content {
+  width: 100%;
+  margin: 0 auto;
+}
+.about-content .about-title {
+  background-color: rosybrown;
+}
+.about-content .hero {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/wallDude.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.about-content .intro-summary {
+  margin: 20px;
+}
+.about-content .about-main-content {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-color: seagreen;
+  border-style: solid;
+  border-width: thin;
+}
+.about-content .about-main-content h4 {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+.about-content .about-main-content .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-content .about-main-content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blank {
+  height: 100px;
+}
+
+.products-wrapper {
+  margin: 20px;
+}
+.products-wrapper h1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.products-wrapper .products-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.products-wrapper .products-gallery .listing {
+  width: 30%;
+  min-height: 100px;
+}
+.products-wrapper .products-gallery .listing .product-image {
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  width: 70%;
+  border-radius: 35px;
+}
+.products-wrapper .products-gallery .listing .product-one {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/pumpkin.gif);
+}
+.products-wrapper .products-gallery .listing .product-two {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/greengirl.jpg);
+}
+.products-wrapper .products-gallery .listing .product-three {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/longlegs.jpg);
+}
+.products-wrapper .products-gallery .listing .product-four {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/liminal.jpg);
+}
+.products-wrapper .products-gallery .listing p {
+  margin: 20px;
+  text-align: left;
+  color: #000;
+  font-size: 12px;
+}
+
+.home-page-wrapper {
+  width: 100%;
+}
+.home-page-wrapper .home-title {
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+.home-page-wrapper .hero {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/wormdudes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-page-wrapper h2 {
+  text-align: center;
+}
+.home-page-wrapper .home-page-content {
+  text-align: center;
+}
+.home-page-wrapper .home-page-content .home-page-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+.home-page-wrapper .home-page-content .home-page-images .home-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 180px;
+  width: 180px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.home-page-wrapper .home-page-content .home-page-images .home-img-one {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/longlegs.jpg);
+}
+.home-page-wrapper .home-page-content .home-page-images .home-img-two {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/pumpkin.gif);
+}
+.home-page-wrapper .home-page-content .home-page-images .home-img-three {
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/batgif.gif);
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+}
+footer .footer-div {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 35px;
+  background: #c0c0c0 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  bottom: 0;
+}
+footer .footer-div .footer-logo {
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 1;
+}
+footer .footer-div .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .footer-div .social-media .footer-icon-f {
+  margin-right: 22px;
+  height: 22px;
+  width: 22px;
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-div .social-media .footer-icon-i {
+  margin-right: 22px;
+  height: 22px;
+  width: 22px;
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/instagram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-div .social-media .footer-icon-t {
+  margin-right: 22px;
+  height: 22px;
+  width: 22px;
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

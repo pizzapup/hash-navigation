@@ -1,0 +1,49 @@
+.products-wrapper {
+  margin: 20px;
+  h1 {
+    // background-color: rosybrown;
+    // background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/longlegs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .products-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .listing {
+      width: 30%;
+      min-height: 100px;
+      .product-image {
+        margin: 0 auto;
+        // background-color: turquoise;
+        // background-image: url(images/longlegs.jpg);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 200px;
+        width: 70%;
+        border-radius: 35px;
+      }
+      .product-one {
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/pumpkin.gif);
+      }
+      .product-two {
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/greengirl.jpg);
+      }
+      .product-three {
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/longlegs.jpg);
+      }
+      .product-four {
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/liminal.jpg);
+      }
+      p {
+        margin: 20px;
+        text-align: left;
+        color: #000;
+        font-size: 12px;
+      }
+    }
+  }
+}

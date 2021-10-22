@@ -1,0 +1,70 @@
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/liminal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+}
+.contact-form {
+  height: 400px;
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .contact-inputs {
+      display: flex;
+      flex-direction: column;
+      //   background-color: cadetblue;
+      margin: 20px;
+      border-radius: 15px;
+      width: 20%;
+      input {
+        min-height: 45px;
+        width: 100%;
+        margin: 15px;
+      }
+    }
+    .contact-message {
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      h3 {
+        text-align: center;
+      }
+      textarea {
+        border-radius: 10px;
+        min-width: 300px;
+        height: 100%;
+      }
+    }
+
+    // .contact-image {
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   min-height: 200px;
+    //   width: 700px;
+    //   border-radius: 35px;
+    //   background-image: url(/images/liminal.jpg);
+    // }
+  }
+  .button {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .form-button {
+      border-radius: 20px;
+      min-height: 30px;
+      width: 100px;
+      text-align: center;
+    }
+  }
+}

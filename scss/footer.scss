@@ -1,0 +1,62 @@
+footer {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  .footer-div {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    background: #c0c0c0 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    bottom: 0;
+    .footer-logo {
+      text-align: left;
+      font-size: 20px;
+      color: #ffffff;
+      opacity: 1;
+    }
+    .copyright {
+    }
+    .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .footer-icon-f {
+        margin-right: 22px;
+        height: 22px;
+        width: 22px;
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/facebook.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .footer-icon-i {
+        margin-right: 22px;
+        height: 22px;
+        width: 22px;
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/instagram.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .footer-icon-t {
+        margin-right: 22px;
+        height: 22px;
+        width: 22px;
+        background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/twitter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
