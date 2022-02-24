@@ -1,6 +1,6 @@
 # hash-navigation
 ## Application Overview ([hash-navigation](https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/))
- Simple responsive SPA that demonstrates using the URL hash as a navigation tool (does not use href for navigation). 
+ Simple responsive SPA that demonstrates using the URL hash as a navigation tool/allow pages to be bookmarked. 
 
 > check it out here: [hash-navigation](https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/)
 
