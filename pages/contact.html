@@ -1,22 +1,17 @@
 <div class="page__contact">
   <form action="#" id="contactform">
-    <fieldset class="main-set">
-      <legend>Send us a message:</legend>
+    <fieldset>
+      <legend>Your Contact Info</legend>
       <label for="fname">First Name:</label
-      ><input
-        class="input"
-        type="text"
-        name="fname"
-        id="fname"
-        placeholder="First Name..."
-      /><label for="lname">Last Name:</label
-      ><input
-        class="input"
-        type="text"
-        name="lname"
-        id="lname"
-        placeholder="Last Name..."
-      /><label for="message">Message:</label
+      ><input class="input" type="text" name="fname" id="fname" /><label
+        for="lname"
+        >Last Name:</label
+      ><input class="input" type="text" name="lname" id="lname" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Message</legend>
+      <label for="message">Message:</label
       ><textarea
         class="text-area"
         name="message"
@@ -24,11 +19,15 @@
         id="message"
         cols="30"
         rows="10"
-        placeholder="Message..."
-      ></textarea
- 
+      ></textarea>
     </fieldset>
-     <fieldset class="radio-set"><legend>Sign up for newletter?</legend><div><label for="signupYes">yes</label
-      ><input type='radio' name='signup' value='yes'/></div><div><label for="signupNo">no</label><input type='radio' name='signup' value='no'/></div></fieldset> </form>
+    <fieldset>
+      <legend>Sign up for newsletter?</legend>
+      <label for="signupYes">yes</label>
+      <input type="radio" name="signup" value="yes" /><label for="signupNo"
+        >no</label
+      ><input type="radio" name="signup" value="no" />
+    </fieldset>
+  </form>
   <button type="submit" class="btn">Submit</button>
 </div>

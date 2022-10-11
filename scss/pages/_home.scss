@@ -1,13 +1,12 @@
 .home-page {
-    display: block;
     @include flex-mix;
     flex-wrap: wrap;
-
     background: $colors-surface-light02;
 
+
     .home__gallery {
-        @include flex-mix;
         flex-wrap: wrap;
+        @include flex-mix
     }
 
     figure {
