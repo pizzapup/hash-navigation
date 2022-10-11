@@ -1,4 +1,4 @@
-# simple-mvc-project [simple-mvc-project](https: //simple-mvc-project.netlify.app/)
+# simple-mvc-project [simple-mvc-project](https://simple-mvc-project.netlify.app/)
 
 ## Description:
 
