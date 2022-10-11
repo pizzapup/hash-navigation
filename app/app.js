@@ -1,31 +1,31 @@
-function changeRoute() {
-    let hashTag = window.location.hash;
-    console.log(hashTag);
-    let pageID = hashTag.replace("#","");
-    console.log(hashTag + " " + pageID);
-    
-    if (pageID != "") {
-        $.get(`pages/${pageID}/${pageID}.html`, function(data) {
-            console.log("data " + data);
-            $("#app").html(data);
-        });
-        console.log(data);
-    }
-    else {
-        $.get(`pages/home/home.html`, function(data) {
-            console.log("data " + data);
-            $("#app").html(data);
-        });
-    }
-}
+import addProducts from "./addProducts.js";
 
-function initURLListener() {
-    window.onhashchange = changeRoute;
-    // referenced developer.mozilla.org for more information about WindowEventHandlers and onhashchange. 
-    // $(window).on('hashChange', changeRoute); - URL would change but page would not refresh when clicked on
-    changeRoute();
-    console.log(changeRoute);
+function changeNavlinkClass(currPage) {
+  $(".navlink").each(function () {
+    this.id === `${currPage}-navlink`
+      ? $(this).addClass("active")
+      : $(this).removeClass("active");
+  });
 }
-$(document).ready(function() {
-    initURLListener();
+function changeHtmlData(currPage, hashDidChange) {
+  hashDidChange === true && changeNavlinkClass(currPage);
+  $.get(`pages/${currPage}.html`, function (data) {
+    $("#app").html(
+      `<h1>${currPage} </h1><div id=${currPage} class='banner-img'></div> ${data}`
+    );
+    currPage === "products" && addProducts();
+  });
+}
+function changeRoute() {
+  let hashTag = window.location.hash;
+  let pageID = hashTag.replace("#", "");
+  pageID != "" ? changeHtmlData(pageID, true) : changeHtmlData("home");
+}
+function initURLListener() {
+  window.onhashchange = changeRoute;
+  changeRoute();
+  console.log(changeRoute);
+}
+$(document).ready(function () {
+  initURLListener();
 });

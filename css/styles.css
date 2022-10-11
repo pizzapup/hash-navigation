@@ -1,402 +1,335 @@
 * {
-  margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html,
 body {
-  height: 100%;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 16px;
-  font-size: 12px;
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+#app {
+  height: 100vh;
+}
+
+nav {
+  padding: 5px;
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+}
+nav ul .navlink {
+  color: rgb(110, 20, 100);
+  border-radius: 5px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  min-height: 44px;
+  min-width: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  padding: 0px 15px;
+}
+nav ul .navlink:hover,
+nav ul .navlink:focus {
+  color: black;
+}
+nav ul .navlink:hover {
+  background-color: #f4f4f4;
+}
+
+.active {
+  background-color: #d9d9d9;
 }
 
 h1 {
   text-align: center;
-  font-size: 30px;
-  margin: 20px;
-  padding: 20px;
-  padding-top: 25px;
-  min-height: 100px;
+  text-transform: uppercase;
 }
 
-nav {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-nav a {
-  text-decoration: none;
-  color: #000;
+.banner-img {
+  height: 230px;
+  background-color: black;
+  margin-bottom: 10px;
 }
 
-.contact-title {
-  text-align: center;
-  font-size: 30px;
-  margin: 5px;
-}
-
-.contact-hero {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/liminal.jpg);
+#home {
+  background-image: url(../../images/wormdudes.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 230px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
-.contact-form {
-  height: 400px;
-}
-.contact-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.contact-form form .contact-inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 20px;
-  border-radius: 15px;
-  width: 20%;
-}
-.contact-form form .contact-inputs input {
-  min-height: 45px;
-  width: 100%;
-  margin: 15px;
-}
-.contact-form form .contact-message {
-  margin-left: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-.contact-form form .contact-message h3 {
-  text-align: center;
-}
-.contact-form form .contact-message textarea {
-  border-radius: 10px;
-  min-width: 300px;
-  height: 100%;
-}
-.contact-form .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.contact-form .button .form-button {
-  border-radius: 20px;
-  min-height: 30px;
-  width: 100px;
-  text-align: center;
-}
-
-.about-content {
-  width: 100%;
-  margin: 0 auto;
-}
-.about-content .about-title {
-  margin: -5px;
-}
-.about-content .hero {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/wallDude.jpg);
-  background-position: left;
+#contact {
+  background-image: url(../images/liminal.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
-.about-content .intro-summary {
-  margin: 20px;
+
+#about {
+  background-image: url(../images/wallDude.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.about-content .about-main-content {
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-color: seagreen;
-  border-style: solid;
-  border-width: thin;
+
+#products {
+  background: #fafafa;
+  height: 40px;
 }
-.about-content .about-main-content h4 {
-  height: 100px;
-  width: 100px;
-  margin-right: 20px;
-}
-.about-content .about-main-content .left {
+
+button {
+  min-height: 44px;
+  min-width: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.about-content .about-main-content .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.blank {
-  height: 100px;
-}
-
-.products-wrapper {
-  margin: 20px;
-}
-.products-wrapper h1 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.products-wrapper .products-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.products-wrapper .products-gallery .listing {
-  width: 30%;
-  min-height: 100px;
-}
-.products-wrapper .products-gallery .listing .product-image {
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 200px;
-  width: 70%;
-  border-radius: 35px;
-}
-.products-wrapper .products-gallery .listing .product-one {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/pumpkin.gif);
-}
-.products-wrapper .products-gallery .listing .product-two {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/greengirl.jpg);
-}
-.products-wrapper .products-gallery .listing .product-three {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/longlegs.jpg);
-}
-.products-wrapper .products-gallery .listing .product-four {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/liminal.jpg);
-}
-.products-wrapper .products-gallery .listing p {
-  margin: 20px;
-  text-align: left;
-  color: #000;
-  font-size: 12px;
-}
-
-.home-page-wrapper {
-  width: 100%;
-}
-.home-page-wrapper .home-title {
-  margin-bottom: -5px;
-  margin-top: -5px;
-}
-.home-page-wrapper .hero {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/wormdudes.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 200px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-.home-page-wrapper h2 {
-  text-align: center;
-}
-.home-page-wrapper .home-page-content {
-  text-align: center;
-}
-.home-page-wrapper .home-page-content .home-page-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 20px;
-}
-.home-page-wrapper .home-page-content .home-page-images .home-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 180px;
-  width: 180px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 10px;
-  font-size: 20px;
-  margin-bottom: 100px;
-}
-.home-page-wrapper .home-page-content .home-page-images .home-img-one {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/longlegs.jpg);
-}
-.home-page-wrapper .home-page-content .home-page-images .home-img-two {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/pumpkin.gif);
-}
-.home-page-wrapper .home-page-content .home-page-images .home-img-three {
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/batgif.gif);
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+  padding: 0px 15px;
 }
 
 footer {
-  width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  bottom: 0;
-}
-footer .footer-div {
-  width: 100%;
-  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 35px;
-  background: #c0c0c0 0% 0% no-repeat padding-box;
-  opacity: 1;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-  bottom: 0;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
 }
-footer .footer-div .footer-logo {
-  text-align: left;
-  font-size: 20px;
-  color: #ffffff;
-  opacity: 1;
-}
-footer .footer-div .social-media {
+
+.about--page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
 }
-footer .footer-div .social-media .footer-icon-f {
-  margin-right: 22px;
-  height: 22px;
-  width: 22px;
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/facebook.svg);
+
+.about__content {
+  width: 90%;
+}
+
+#productslist {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 15px;
+  background: #fafafa;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #f4f4f4;
+  padding: 5px;
+}
+
+.card__img--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  gap: 0;
+  height: 360px;
+  background-image: "";
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-footer .footer-div .social-media .footer-icon-i {
-  margin-right: 22px;
-  height: 22px;
-  width: 22px;
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/instagram.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.page__contact input:not([type="radio"]),
+.page__contact textarea {
+  min-height: 45px;
+  outline: 2px 2px #19191f;
+  border: 2px solid #19191f;
+  border-width: thin;
+  border-radius: 5px;
+  min-width: 60%;
 }
-footer .footer-div .social-media .footer-icon-t {
-  margin-right: 22px;
-  height: 22px;
-  width: 22px;
-  background-image: url(https://in-info-web4.informatics.iupui.edu/~arihardw/nav-url/images/twitter.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.page__contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+}
+.page__contact fieldset {
+  padding: 10px;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.page__contact .radio-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+.page__contact .radio-set div {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.home-page {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #f4f4f4;
+}
+.home-page .home__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.home-page figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  position: relative;
+  max-width: 260px;
+}
+.home-page figure img {
+  border-radius: 3px;
+  max-width: 260px;
+}
+.home-page figure figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  background: transparent;
+  width: 60%;
+  height: 60%;
+  color: transparent;
+  z-index: 10;
+  text-align: center;
+}
+.home-page figure:hover:after,
+.home-page figure:focus:after {
+  background-color: #19191f;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.4;
+}
+.home-page figure:hover figcaption,
+.home-page figure:focus figcaption {
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
 }

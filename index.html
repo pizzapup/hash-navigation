@@ -9,25 +9,28 @@
   </head>
   <body>
     <nav>
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#products">PRODUCTS</a>
-      <a href="#contact">CONTACT</a>
+      <ul>
+        <li><a href="#home" id="home-navlink" class="navlink">HOME</a></li>
+        <li><a href="#about" id="about-navlink" class="navlink">ABOUT</a></li>
+        <li>
+          <a href="#products" id="products-navlink" class="navlink">PRODUCTS</a>
+        </li>
+        <li>
+          <a href="#contact" id="contact-navlink" class="navlink">CONTACT</a>
+        </li>
+      </ul>
     </nav>
     <div id="app"></div>
-    <script src="lib/jquery-3.6.0.min.js"></script>
-    <script src="model/model.js"></script>
-    <script src="app/app.js"></script>
     <footer>
-      <div class="footer-div">
-        <div class="footer-logo">lorem</div>
-        <div class="copyright">Copyright XXXX. All rights reserved</div>
-        <div class="social-media">
-          <div class="footer-icon-f"></div>
-          <div class="footer-icon-i"></div>
-          <div class="footer-icon-t"></div>
-        </div>
+      <div class="footer-logo">lorem</div>
+      <div class="copyright">Copyright XXXX. All rights reserved</div>
+      <div class="social-media">
+        <div class="footer-icon-f"></div>
+        <div class="footer-icon-i"></div>
+        <div class="footer-icon-t"></div>
       </div>
     </footer>
   </body>
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="app/app.js" type="module"></script>
 </html>

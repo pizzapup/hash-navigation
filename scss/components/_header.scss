@@ -1,0 +1,62 @@
+nav {
+    padding: 5px;
+    margin: 0;
+
+    ul {
+        list-style: none;
+        @include flex-mix(space-evenly);
+
+        .navlink {
+            color: $colors-accent;
+            border-radius: $border-radius-md;
+            @include transition-default;
+            @include min-touch;
+            @include flex-mix;
+            text-decoration-color: transparent;
+            padding: 0px 15px;
+
+            &:hover,
+            &:focus {
+                color: black;
+            }
+
+            &:hover {
+                background-color: $colors-surface-light02;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: $colors-surface-light03;
+
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner-img {
+    height: 230px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+#home {
+    @include background-img(url(../../images/wormdudes.jpg));
+}
+
+#contact {
+    @include background-img(url(../images/liminal.jpg));
+
+}
+
+#about {
+    @include background-img(url(../images/wallDude.jpg));
+}
+
+#products {
+    background: $colors-surface-light01;
+    height: 40px;
+}

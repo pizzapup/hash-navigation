@@ -1,7 +1,10 @@
-@import "structure.scss";
-@import "nav.scss";
-@import "contact.scss";
-@import "about.scss";
-@import "products.scss";
-@import "home.scss";
-@import "footer.scss";
+@import "./global/mixins.scss";
+@import "./global/variables.scss";
+@import "./global/reset.scss";
+@import "./components/header.scss";
+@import "./components/button.scss";
+@import "./components/footer.scss";
+@import "./pages/about.scss";
+@import "./pages/_products.scss";
+@import "./pages/contact.scss";
+@import "./pages/home.scss";

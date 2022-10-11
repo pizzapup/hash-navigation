@@ -1,0 +1,64 @@
+.home-page {
+    display: block;
+    @include flex-mix;
+    flex-wrap: wrap;
+
+    background: $colors-surface-light02;
+
+    .home__gallery {
+        @include flex-mix;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        @include flex-mix;
+        @include transition-default;
+        position: relative;
+        max-width: 260px;
+
+        img {
+            border-radius: $border-radius-sm;
+            max-width: 260px;
+
+        }
+
+        figcaption {
+            @include flex-mix($gap: $spacing-lg);
+            flex-direction: column;
+            position: absolute;
+            background: transparent;
+            width: 60%;
+            height: 60%;
+            color: transparent;
+            z-index: 10;
+            text-align: center;
+        }
+
+        &:hover,
+        &:focus {
+            &:after {
+                background-color: $colors-surface-dark;
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                opacity: 0.4;
+            }
+
+            figcaption {
+                border-radius: $border-radius-sm;
+                background: rgba(000, 000, 000, 0.8);
+                color: white;
+
+
+            }
+
+
+
+        }
+
+
+
+    }
+}

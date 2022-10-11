@@ -1,0 +1,5 @@
+button {
+    @include min-touch;
+    @include flex-mix;
+    padding: 0px 15px;
+}

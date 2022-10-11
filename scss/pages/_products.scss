@@ -1,0 +1,26 @@
+#productslist {
+
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 15px;
+  background: $colors-surface-light01;
+
+}
+
+.card {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: $border-radius-md;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background: $colors-surface-light02;
+  padding: 5px;
+}
+
+.card__img--wrap {
+  @include flex-mix($align: stretch);
+  height: 360px;
+  @include background-img;
+
+}

@@ -1,0 +1,43 @@
+.page__contact {
+
+    input:not([type='radio']),
+    textarea {
+        min-height: 45px;
+        @include outline-border($colors-surface-dark);
+        border-width: thin;
+        border-radius: $border-radius-md;
+        min-width: 60vw;
+
+    }
+
+    form {
+        @include flex-mix;
+    }
+
+    fieldset {
+        padding: 10px;
+        border-radius: $border-radius-md;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .radio-set {
+        @include flex-mix($gap:5px);
+
+        div {
+            background-color: $colors-surface-light02;
+            padding: 20px;
+        }
+    }
+}
+
+// input {
+//     min-height: 45px;
+//     width: 100%;
+//     border-radius: 3px;
+//     @include outline-border(#000, 1px);
+// }
+
+// textarea {
+//     border-radius: 3px;
+// }
